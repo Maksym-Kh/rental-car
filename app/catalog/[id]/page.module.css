@@ -1,0 +1,93 @@
+.detailsWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+}
+
+.detailsImage {
+    border-radius: 19px;
+}
+
+.detailsImageWrapper {
+    margin-bottom: 40px;
+}
+
+.mainInfo {
+    margin-bottom: 68px;
+}
+
+.detailedSpecs {
+    height: 772px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.detailsTitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    margin-bottom: 8px;
+}
+
+.detailsId {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--gray);
+}
+
+.detailsInfoWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.detailsInfo {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &:nth-child(2) {
+        margin-right: 16px;
+    }
+}
+
+.detailsPrice {
+    color: var(--button);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    margin-bottom: 32px;
+}
+
+.detailsDescription {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    width: 488px;
+}
+
+.detailsContentTitle {
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+
+.detailsContentParagraph {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.detailsContentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

@@ -1,0 +1,29 @@
+.carListGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 32px;
+    margin-bottom: 80px;
+}
+
+
+.loadMoreBtn {
+    border: 1px solid var(--button);
+    border-radius: 12px;
+    padding: 12px 36px;
+    width: 156px;
+    height: 44px;
+    background: transparent;
+    color: var(--main);
+
+    &:hover,
+    &:focus {
+        background: transparent;
+        border: 1px solid var(--button-hover);
+    }
+}
+
+.loadMoreBtnWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 124px;
+}

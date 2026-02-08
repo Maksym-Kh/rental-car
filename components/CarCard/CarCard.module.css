@@ -1,0 +1,130 @@
+.cardImage {
+    width: 100%;
+    height: 268px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.cardImageWrapper {
+    margin-bottom: 16px;
+    position: relative;
+
+    &::after {
+        content: "";
+        border-radius: 14px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg,
+                rgba(18, 20, 23, 0.54) 0%,
+                rgba(18, 20, 23, 0) 20%,
+                rgba(18, 20, 23, 0) 80%,
+                rgba(18, 20, 23, 0.54) 100%);
+        pointer-events: none;
+    }
+}
+
+.card {
+    width: 276px;
+    height: 424px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardDetails {
+    margin-bottom: 28px;
+    flex-grow: 1;
+    font-size: 12px;
+    line-height: 133%;
+    color: var(--gray);
+    min-height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.detailItem {
+    display: inline-block;
+    white-space: nowrap;
+    max-width: 110px;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.cardBtn {
+    border-radius: 12px;
+    padding: 12px 96px;
+    width: 100%;
+    height: 44px;
+}
+
+.cardPrice {
+    flex-shrink: 0;
+    margin-left: 4px;
+}
+
+.cardInfoTitle {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 0;
+}
+
+.titleText {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-wrap: nowrap;
+}
+
+.model {
+    color: var(--button);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-shrink: 1;
+}
+
+.separator {
+    color: var(--gray-light);
+    margin: 0 6px;
+}
+
+.favoriteBtn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: transparent;
+    z-index: 10;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+        background: transparent;
+    }
+}
+
+.heartIcon {
+    fill: var(--white);
+    transition: var(--transition);
+}
+
+.isFavorite {
+    fill: var(--button);
+}

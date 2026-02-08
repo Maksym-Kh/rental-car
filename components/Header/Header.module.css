@@ -1,0 +1,36 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--badges);
+    border-bottom: 1px solid #fff;
+}
+
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+.headerNav {
+    display: flex;
+    gap: 32px;
+}
+
+.navLink {
+    transition: var(--transition);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+
+    &:hover {
+        color: var(--button-hover);
+    }
+}
+
+.active {
+    color: var(--button);
+}
