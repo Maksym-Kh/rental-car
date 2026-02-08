@@ -1,74 +1,107 @@
-Car Rental Service
+# RentalCar Service
 
 A premium car rental platform designed for seamless vehicle discovery,
 filtering, and effortless booking.
 
-🌐 Live Demo
+## ** Live Demo**
 
-🎯 Project Purpose Car Rental Service was developed to showcase modern frontend
-capabilities in building a high-performance e-commerce experience. The project
-emphasizes complex filtering logic, persistent state management, and a smooth
-user interface for a premium car rental business.
+https://rental-car-two-dusky.vercel.app
 
-🚀 Features 🏎️ Vehicle Fleet Management Browse an extensive collection of cars
+---
 
-Dynamic pagination (Load More)
+## Project Purpose
 
-Detailed car specifications and features
+**RentalCar** was developed as a technical project to showcase modern frontend
+capabilities. The focus is on building a high-performance e-commerce experience
+with complex server-side filtering, persistent state management, and a polished
+user interface.
 
-🔍 Smart Filtering System Filter by brand and model
+---
 
-Price-based search (Price per hour)
+## ** Features**
 
-Mileage range selection with auto-formatting
+### Vehicle Fleet Management
 
-❤️ Favorites & Personalization Persistent favorites list (saves after refresh)
+- **Dynamic Catalog:** Browse an extensive collection of cars fetched from a
+  remote API.
+- **Load More Pagination:** Efficiently load additional vehicles without page
+  refreshes.
+- **Detailed View:** Dedicated pages for each car with full specifications and
+  rental conditions.
 
-Quick toggle favorite status on any car card
+### Smart Filtering System
 
-Dedicated view for shortlisted vehicles
+- **Server-side Filtering:** Brand, price, and mileage filters processed on the
+  backend for maximum performance.
+- **Mileage Auto-formatting:** Real-time input formatting (e.g., `5 000 km`) for
+  better readability.
 
-📱Interactive UI
+### Favorites & Personalization
 
-Interactive modals with rental conditions
+- **Persistent State:** Your favorite cars stay saved even after a page refresh
+  (via LocalStorage).
+- **One-click Favorites:** Easily add or remove cars from your shortlist
+  directly from the catalog.
 
-Smooth transitions and hover effects
+### UI/UX
 
-🛠️ Libraries & Tools Core Next.js — for routing, server-side rendering, and app
-structure
+- **Interactive Forms:** Functional booking form with date selection and
+  validation.
+- **User Notifications:** Instant feedback via toast notifications for bookings
+  and actions.
+- **Loading States:** Smooth experience with custom loaders during data
+  fetching.
 
-React — for building component-based user interface
+---
 
-TypeScript — for type safety and robust developer experience
+## ** Libraries & Tools**
 
-State & Data Zustand — for lightweight global state management
+### Core
 
-Zustand Persist — for local storage data synchronization
+- **Next.js (App Router)** — for routing, SSR, and optimized performance.
+- **React** — for building a component-based UI.
+- **TypeScript** — for type safety and robust developer experience.
 
-Axios — for reliable HTTP requests and API communication
+### State & Data
 
-UI & UX CSS Modules — for scoped and maintainable styling
+- **Zustand** — for lightweight and scalable global state management.
+- **Axios** — for reliable HTTP requests and API communication.
 
-clsx — for conditional class name management
+### UI & UX
 
-react-datepicker — for intuitive date selection in booking
+- **CSS Modules** — for scoped, maintainable, and collision-free styling.
+- **clsx** — for conditional class name management.
+- **react-datepicker** — for intuitive date selection in the booking form.
+- **react-hot-toast** — for beautiful, non-blocking status notifications.
 
-react-hot-toast — for beautiful status notifications
+---
 
-⚙️ Dependencies Core next, react, react-dom
+## ** Dependencies**
 
-State & Data zustand, axios
+### Core
 
-UI & UX clsx, react-datepicker, react-hot-toast
+`next`, `react`, `react-dom`
 
-Dev Dependencies TypeScript — for static typing
+### State & Data
 
-ESLint — for code quality and linting
+`zustand`, `axios`
 
-Prettier — for consistent code formatting
+### UI & UX
 
-🧑 Author
+`clsx`, `react-datepicker`, `react-hot-toast`
 
-Maksym Khlysta — Developer
+---
 
-https://github.com/Maksym-Kh
+## ** Dev Dependencies**
+
+- **TypeScript** — for static typing.
+- **ESLint** — for code quality and linting.
+- **Prettier** — for consistent code formatting.
+
+---
+
+## \*\* Author
+
+- Maksym Khlysta — Developer
+
+- https://github.com/Maksym-Kh
