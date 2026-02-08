@@ -30,7 +30,7 @@ export const useCarStore = create<CarStore>()(
       favorites: [],
 
       // Fetches cars with filters. Resets list for new search to ensure data accuracy
-      fetchCars: async (page: number, filters: CarFilters = {}) => {
+      fetchCars: async (page: number, filters?: CarFilters) => {
         set({ isLoading: true });
 
         const activeFilters =

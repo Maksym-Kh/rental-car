@@ -8,14 +8,15 @@ import clsx from 'clsx';
 import Loader from '../Loader/Loader';
 
 export default function CarList() {
-  const { cars, page, totalPages, isLoading, fetchCars } = useCarStore();
+  const { cars, page, totalPages, isLoading, fetchCars, currentFilters } =
+    useCarStore();
 
   useEffect(() => {
     fetchCars(1);
   }, []);
 
   const handleLoadMore = () => {
-    fetchCars(Number(page) + 1);
+    fetchCars(Number(page) + 1, currentFilters);
   };
 
   return (
